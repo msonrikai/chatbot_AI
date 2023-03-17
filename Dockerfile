@@ -35,7 +35,7 @@ RUN cd ~/ParlAI && \
 
 RUN pip install --upgrade typing-extensions
 
-COPY main.py ParlAI/main.py
+
 
 EXPOSE 34596:34596
 EXPOSE 8080:8080
