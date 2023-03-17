@@ -25,7 +25,7 @@ RUN echo "import nltk; nltk.download(\"stopwords\"); nltk.download(\"punkt\")" >
 RUN python nltk_dl_script.py
 
 # Download the ParlAI Github repo
-RUN git clone https://github.com/facebookresearch/ParlAI.git ~/ParlAI
+RUN git clone --branch dev_ms https://github.com/msonrikai/chatbot_AI ~/ParlAI
 
 # Running ParlAI install
 RUN cd ~/ParlAI && \
