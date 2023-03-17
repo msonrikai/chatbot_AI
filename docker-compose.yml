@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  parlai:
+    container_name: parlai-app
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    expose:
+      - 8080
+      - 34596
+      - 8000
+    ports:
+      - 8080:8080
+      - 34596:34596
+      - 8000:8000
